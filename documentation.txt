@@ -1,0 +1,22 @@
+1 - Component Text:
+
+É um componente reutilizável que permite renderizar diferentes elementos HTML (span, p, h1, etc.) 
+com estilos consistentes usando Tailwind CSS.
+
+Por que CVA é melhor aqui:
+
+Type Safety: TypeScript sabe exatamente quais variants existem
+Reutilização: Classes base aplicadas automaticamente
+Flexibilidade: Fácil adicionar novas variants
+Manutenibilidade: Mudanças centralizadas
+Performance: Classes são concatenadas eficientement
+
+Exemplo de uso do seu componente:
+
+// Diferentes elementos HTML
+<Text as="h1" variant="body-md-bold">Título</Text>
+<Text as="p" variant="body-md">Parágrafo normal</Text>
+<Text variant="body-sm-bold">Span pequeno e negrito</Text>
+
+// Com classes extras
+<Text className="text-red-500" variant="body-md">Texto vermelho</Text>

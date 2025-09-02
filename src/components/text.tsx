@@ -15,9 +15,9 @@ export const textVariants = cva("font-sans text-gray-400", {
 })
 
 interface TextProps extends VariantProps<typeof textVariants> {
-    as?: keyof React.JSX.IntrinsicElements
-    className?: string
-    children?: React.ReactNode
+    as?: keyof React.JSX.IntrinsicElements // Permite escolher HTML tag
+    className?: string // Classes CSS extras
+    children?: React.ReactNode // Conteúdo interno
 }
 
 export default function Text({as="span", variant, className, children, ...props}: TextProps){
