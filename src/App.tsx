@@ -7,38 +7,41 @@ import ButtonIcon from "./components/button-icon"
 import InputText from "./components/input-text"
 import InputCheckbox from "./components/input-checkbox"
 import Card from "./components/card"
+import Container from "./components/container"
 
 export default function App() {
 
   return (
-    <div>
-      <Icon svg={TrashIcon} className="fill-pink-base"/>
-
-      <Badge variant="secondary">5</Badge>
-      <Badge variant="primary">2 de 5</Badge>
-
+    <Container>
       <div>
-        <Button icon={PlusIcon}>Nova tarefa</Button>
-      </div>
+        <Icon svg={TrashIcon} className="fill-pink-base"/>
 
-      <div>
-        <ButtonIcon icon={TrashIcon}/>
-        <ButtonIcon icon={TrashIcon} variant="secondary"/>
-        <ButtonIcon icon={TrashIcon} variant="tertiary"/>
-      </div>
+        <Badge variant="secondary">5</Badge>
+        <Badge variant="primary">2 de 5</Badge>
 
-      <div>
-        <InputText/>
-      </div>
+        <div>
+          <Button icon={PlusIcon}>Nova tarefa</Button>
+        </div>
 
-      <div>
-        <InputCheckbox/>
-      </div>
+        <div>
+          <ButtonIcon icon={TrashIcon}/>
+          <ButtonIcon icon={TrashIcon} variant="secondary"/>
+          <ButtonIcon icon={TrashIcon} variant="tertiary"/>
+        </div>
 
-      <div>
-        <Card size="md">hola mundo</Card>
+        <div>
+          <InputText/>
+        </div>
+
+        <div>
+          <InputCheckbox/>
+        </div>
+
+        <div>
+          <Card size="md">hola mundo</Card>
+        </div>
       </div>
-    </div>
+    </Container>
   )
 }
 
