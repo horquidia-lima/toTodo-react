@@ -3,6 +3,7 @@ import PlusIcon from "./assets/icons/plus.svg?react"
 import Badge from "./components/badge"
 import Icon from "./components/icon"
 import Button from "./components/button"
+import ButtonIcon from "./components/button-icon"
 
 export default function App() {
 
@@ -15,6 +16,12 @@ export default function App() {
 
       <div>
         <Button icon={PlusIcon}>Nova tarefa</Button>
+      </div>
+
+      <div>
+        <ButtonIcon icon={TrashIcon}/>
+        <ButtonIcon icon={TrashIcon} variant="secondary"/>
+        <ButtonIcon icon={TrashIcon} variant="tertiary"/>
       </div>
     </div>
   )
