@@ -5,6 +5,7 @@ import Icon from "./components/icon"
 import Button from "./components/button"
 import ButtonIcon from "./components/button-icon"
 import InputText from "./components/input-text"
+import InputCheckbox from "./components/input-checkbox"
 
 export default function App() {
 
@@ -27,6 +28,10 @@ export default function App() {
 
       <div>
         <InputText/>
+      </div>
+
+      <div>
+        <InputCheckbox/>
       </div>
     </div>
   )
