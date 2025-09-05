@@ -4,11 +4,12 @@ import Badge from "./components/badge"
 import Icon from "./components/icon"
 import Button from "./components/button"
 import ButtonIcon from "./components/button-icon"
+import InputText from "./components/input-text"
 
 export default function App() {
 
   return (
-    <div className="felx gap-1">
+    <div>
       <Icon svg={TrashIcon} className="fill-pink-base"/>
 
       <Badge variant="secondary">5</Badge>
@@ -22,6 +23,10 @@ export default function App() {
         <ButtonIcon icon={TrashIcon}/>
         <ButtonIcon icon={TrashIcon} variant="secondary"/>
         <ButtonIcon icon={TrashIcon} variant="tertiary"/>
+      </div>
+
+      <div>
+        <InputText/>
       </div>
     </div>
   )
